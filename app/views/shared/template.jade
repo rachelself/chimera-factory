@@ -6,7 +6,17 @@ html
     link(href='/css/normalize.css', rel='stylesheet')
     link(href='/css/buttons.css', rel='stylesheet')
     link(href='/less/app.css', rel='stylesheet')
-  body
+  body(style='background-image:url(/img/main-bg.jpg);')
+    nav
+      h1.logo Oceanic Aliens
+      span
+        a(href='/', class='button button-border-primary button-rounded') Home
+      span
+        a(href='/about', class='button button-border-primary button-rounded') About
+      span
+        a(href='/chimeras', class='button button-border-primary button-rounded') Chimeras
+
+
     block content
 
     script(src='/js/vendor/jquery-2.1.1.js')
